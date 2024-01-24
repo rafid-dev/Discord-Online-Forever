@@ -130,7 +130,7 @@ bot.on("messageCreate", (msg) => {
       bot.createMessage(msg.channel.id, randomGreeting.toLowerCase());
     }
   }
-  bot.editStatus({
+  bot.editStatus(process.env.status, {
     name: process.env.activity,
     type: parseInt(process.env.activityType),
   });
