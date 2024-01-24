@@ -20,7 +20,8 @@ bot.on("ready", () => {
     activities[].url	String (optional)
     The URL of the activity
   */
-  bot.editStatus(process.env.status, {name: process.env.activity, type: process.env.activityType})
-})
+  console.log("Ready!");
+  bot.editStatus(process.env.status, {name: process.env.activity, type: process.env.activityType});
+});
 
 bot.connect(); // Get the bot to connect to Discord
